@@ -186,6 +186,9 @@ function swapNodes(list, data1, data2) {
 //This means that it has a linear big O runtime of O(n), since each while loop has a O(n) runtime, and constants are dropped.
 //There are four new variables created in the function regardless of the input, which means that it has a constant space complexity of O(1).
 
+
+
+
 // Two-Pointer Linked List Techniques
 // Many common singly linked list problems can be solved by iterating with two pointers. This is sometimes known as the runner technique.
 
