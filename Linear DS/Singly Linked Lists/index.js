@@ -23,7 +23,7 @@ class LinkedList {
     const newHead = new Node(data);
     const currentHead = this.head;
     this.head = newHead;
-    if (currentHead) {
+    if (currentHead !== null) {
       this.head.setNextNode(currentHead);
     }
   }
@@ -73,9 +73,12 @@ class LinkedList {
       return this.removeHead();
     }
     let currentNode = this.head;
-    while (currentNode.getNextNode()) {
+    while (currentNode !== null) {
       if (currentNode.getNextNode().data === matchingData) {
         const matchingNode = currentNode.getNextNode();
+        // console.log(currentNode);
+        // console.log(matchingNode);
+        // console.log(matchingNode.getNextNode());
         currentNode.setNextNode(matchingNode.getNextNode());
         return matchingNode;
       }
@@ -110,8 +113,9 @@ seasons.addToTail("winter");
 console.log(seasons.printList());
 seasons.removeHead();
 console.log(seasons.printList());
-seasons.removeNode("summer");
+seasons.removeNode("fall");
 console.log(seasons.printList());
+
 console.log(seasons);
 
 const testList = new LinkedList();
@@ -148,7 +152,7 @@ function swapNodes(list, data1, data2) {
       break;
     }
     node1Prev = node1;
-    node1 = node1.getNextNode();
+    node1 = node1.getNextNode(); // node1 = node1.next;
   }
 
   while (node2 !== null) {
@@ -176,9 +180,9 @@ function swapNodes(list, data1, data2) {
     node2Prev.setNextNode(node1);
   }
 
-  // let temp = node1.getNextNode();
+  let temp = node1.getNextNode();
   node1.setNextNode(node2.getNextNode());
-  node2.setNextNode(node1.getNextNode());
+  node2.setNextNode(temp);
 }
 
 //Time and Space Complexity
@@ -186,23 +190,26 @@ function swapNodes(list, data1, data2) {
 //This means that it has a linear big O runtime of O(n), since each while loop has a O(n) runtime, and constants are dropped.
 //There are four new variables created in the function regardless of the input, which means that it has a constant space complexity of O(1).
 
-
-
-
 // Two-Pointer Linked List Techniques
 // Many common singly linked list problems can be solved by iterating with two pointers. This is sometimes known as the runner technique.
 
+// Consider the following problem: Create a function that returns the nth last element of a singly linked list.
 // One thing that might first come to mind is to use an array to store a representation of the linked list.
 // While this approach results in an easy-to-read implementation, it could also use up lots of memory maintaining a dual representation of the same data.
 // If the linked list has one million nodes, we’ll need one million pointers in an array to keep track of it! An approach like this results in an extra O(n) space being allocated.
 
 const arrayNthLast = (list, n) => {
   const linkedListArray = [];
-  let currentNode = list.removeHead();
+  let currentNode = list.head;
   while (currentNode) {
     linkedListArray.push(currentNode);
     currentNode = currentNode.getNextNode();
   }
+  // Handle edge cases where n is greater than the length of the list
+  if (n > linkedListArray.length || n <= 0) {
+    return null;
+  }
+
   return linkedListArray[linkedListArray.length - n];
 };
 
@@ -210,8 +217,8 @@ const arrayNthLast = (list, n) => {
 // As in the previous example, we will use one pointer to iterate through the entire list, but we’ll also move a second pointer delayed n steps behind the first one.
 
 // This way, when the first pointer reaches the end of the list, the second pointer will be n steps behind it, pointing to the nth-to-last node.
-// This approach uses O(1) space, as we only need two pointers to solve the problem.
 // The time complexity is O(n), as we need to iterate through the entire list to find the nth-to-last node just once.
+// This approach uses O(1) space, as we only need two pointers to solve the problem.
 
 // Pseudocode:
 
@@ -247,8 +254,9 @@ const nthLastNode = (linkedList, n) => {
 // Pointers at Different Speeds
 // Another two-pointer technique involves sending pointers through the list at different iteration “speeds”
 // This approach is useful for detecting cycles in linked lists, as well as finding the middle node of a linked list.
-// The idea is to have one pointer move through the list one node at a time, while the other pointer moves two nodes at a time.
+
 // Consider this problem: Find the middle node of a linked list
+// The idea is to have one pointer move through the list one node at a time, while the other pointer moves two nodes at a time.
 
 // Approaches:
 // As before, it’s possible to find a solution by iterating through the entire list, creating an array representation, and then returning the middle index.
@@ -260,6 +268,16 @@ const nthLastNode = (linkedList, n) => {
 // push the current element onto array
 // move forward one node
 // return array[length / 2]
+
+function arrayMiddle(linkedList) {
+  const linkedListArray = [];
+  let currentNode = linkedList.head;
+  while (currentNode) {
+    linkedListArray.push(currentNode);
+    currentNode = currentNode.getNextNode();
+  }
+  return linkedListArray[Math.floor(linkedListArray.length / 2)];
+}
 
 // Instead, we can use two pointers to move through the list.
 // The first pointer takes two steps through the list for every one step that the second takes, so it iterates twice as fast.
@@ -324,9 +342,12 @@ const generateTestLinkedList = (length) => {
 };
 
 const testLinkedList = generateTestLinkedList(11);
-console.log(findMiddle(testLinkedList)); // 6
-console.log(findMiddleAlternate(testLinkedList)); // 6
-console.log(nthLastNode(testLinkedList, 2)); // 10
+
+console.log("findMiddle: ", findMiddle(testLinkedList)); // 6
+console.log("findMiddleAlternate: ", findMiddleAlternate(testLinkedList)); // 6
+console.log("nthLastNode: ", nthLastNode(testLinkedList, 2)); // 10
+console.log("arrayNthLast: ", arrayNthLast(testLinkedList, 2)); // 10
+console.log("arrayMiddle: ", arrayMiddle(testLinkedList)); // 6
 
 // Conclusions
 // Two-pointer techniques are useful for solving a variety of linked list problems.
