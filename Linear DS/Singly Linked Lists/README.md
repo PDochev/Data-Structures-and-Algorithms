@@ -23,7 +23,7 @@ For searching and accessing an element in a linked list, the time complexity is 
 
 ### Space Complexity
 
-Space complexity for each operation in a linked list is O(1), as no extra space is required for any operation.
+Space complexity is O(n) for a singly linked list, as we need to allocate memory for each node in the list.
 
 ## References
 
