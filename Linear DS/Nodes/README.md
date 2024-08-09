@@ -8,4 +8,4 @@ The data can be any data type, and the reference to the next node is a pointer t
 
 This reference is what allows nodes to be linked together to form more complex data structures.
 
-![Node] (Nodes/Node.png)
+![Node](Node.png)
