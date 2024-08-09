@@ -73,7 +73,8 @@ class LinkedList {
       return this.removeHead();
     }
     let currentNode = this.head;
-    while (currentNode !== null) {
+    // while (currentNode !== null)
+    while (currentNode.getNextNode() !== null) {
       if (currentNode.getNextNode().data === matchingData) {
         const matchingNode = currentNode.getNextNode();
         // console.log(currentNode);
@@ -183,6 +184,9 @@ function swapNodes(list, data1, data2) {
   let temp = node1.getNextNode();
   node1.setNextNode(node2.getNextNode());
   node2.setNextNode(temp);
+
+  // Return the list (NOTE: This is not required, but it allows for easier testing of the function)
+  // return list;
 }
 
 //Time and Space Complexity
