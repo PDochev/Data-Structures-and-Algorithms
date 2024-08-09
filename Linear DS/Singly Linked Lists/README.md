@@ -8,6 +8,18 @@ There are two main types of linked lists: singly linked lists and doubly linked 
 
 Linked lists are commonly used to implement other data structures like stacks, queues, and graphs.
 
+## Common Operations
+
+ - **Insertion**: Add a new node to the list.
+
+ - **Deletion**: Remove a node from the list.
+
+ - **Traversal**: Traveling through the list to access or modify the nodes.
+
+- **Search**: Find a node with a specific value.
+
+- **Access**: Retrieve the value of a node at a specific position.
+
 ## Complexities
 
 ### Time Complexity
