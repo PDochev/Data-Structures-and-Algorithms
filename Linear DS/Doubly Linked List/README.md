@@ -1,6 +1,6 @@
 # Doubly Linked Lists
 
-![Singly_Linked_List](Doubly_Linked_List.png)
+![Singly_Linked_List](Doubly_Linked_List.svg)
 
 Like a singly linked list, a doubly linked list is comprised of a series of nodes. Each node contains data and two links (or pointers) to the next and previous nodes in the list. The head node is the node at the beginning of the list, and the tail node is the node at the end of the list. The head node’s previous pointer is set to null and the tail node’s next pointer is set to null.
 
@@ -20,11 +20,11 @@ Think of your daily commute on the subway as a real-world example of a doubly li
 
 ---
 
-![Singly_Linked_List](Doubly_List_Adding.png)
+![Singly_Linked_List](Doubly_List_Adding.svg)
 
 ---
 
-![Singly_Linked_List](Doubly_List_Removing.png)
+![Singly_Linked_List](Doubly_List_Removing.svg)
 
 ---
 

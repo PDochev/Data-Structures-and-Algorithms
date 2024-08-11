@@ -1,6 +1,6 @@
 # Singly Linked Lists
 
-![Singly_Linked_List](Linked_List.png)
+![Singly_Linked_List](Linked_List.svg)
 
 A singly linked list is a data structure that consists of a sequence of nodes. Each node contains data and a reference (or link) to the next node in the sequence. The first node is called the head, and the last node is called the tail. The tail node has a reference to null, indicating the end of the list.
 
@@ -10,11 +10,11 @@ Linked lists are commonly used to implement other data structures like stacks, q
 
 ## Common Operations
 
- - **Insertion**: Add a new node to the list.
+- **Insertion**: Add a new node to the list.
 
- - **Deletion**: Remove a node from the list.
+- **Deletion**: Remove a node from the list.
 
- - **Traversal**: Traveling through the list to access or modify the nodes.
+- **Traversal**: Traveling through the list to access or modify the nodes.
 
 - **Search**: Find a node with a specific value.
 
