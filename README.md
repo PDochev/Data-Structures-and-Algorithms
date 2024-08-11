@@ -13,4 +13,3 @@ Complex data structures are composed of multiple linear data structures or other
 ## Algorithms
 
 Algorithms are step-by-step procedures for solving problems. They are used to manipulate data and perform operations on data structures. Examples of algorithms include searching, sorting, and graph traversal algorithms.
-

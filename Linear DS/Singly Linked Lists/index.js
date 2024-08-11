@@ -1,6 +1,6 @@
 const Node = require("../Nodes/index.js");
 
-// Linked Lists
+// Singly Linked Lists
 // A linked list is a linear data structure that consists of a sequence of elements, each of which is connected to the next element in the sequence.
 // Each element in a linked list is called a node, and each node contains two key pieces of information: the data and a reference to the next node.
 // The first node in a linked list is called the head, and the last node is called the tail. The tail node's reference to the next node is null, indicating the end of the list.
