@@ -12,7 +12,7 @@ If a link is Null, it indicates that you have reached the end of the data struct
 
 An orphaned node is a node that is not linked to any other nodes. This can happen if you remove a node from a data structure without updating the links to the surrounding nodes. If you have a reference to an orphaned node, you can no longer access the rest of the data structure. For example, if you have node_a -> node_b -> node_c, and you remove node_b without updating the links, you will have node_a -> node_c, and node_b will be orphaned. You can no longer access node_c from node_a. You can avoid orphaned nodes by updating the links when you remove a node from a data structure. In this case , you would update node_a to point to node_c.
 
-![Node](Node_Orphan.png)
+![Node_Orphan](Node_Orphan.png)
 
 ## References
 
