@@ -18,6 +18,16 @@ Think of your daily commute on the subway as a real-world example of a doubly li
 
 - **Access**: Retrieve the value of a node at a specific position.
 
+---
+
+![Singly_Linked_List](Doubly_List_Adding.png)
+
+---
+
+![Singly_Linked_List](Doubly_List_Removing.png)
+
+---
+
 ## Complexities
 
 ### Time Complexity
