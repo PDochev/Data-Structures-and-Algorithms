@@ -24,7 +24,7 @@ Linked lists are commonly used to implement other data structures like stacks, q
 
 ### Time Complexity
 
-For searching and accessing an element in a linked list, the time complexity is O(n) in the worst case, as we may have to traverse the entire list to find the element. For insertion and deletion, the time complexity is O(1) when inserting or deleting from the head of the list, as we only need to update the head reference. For inserting or deleting from any other location in the list, the time complexity is O(n), as we may have to traverse the list to find the location.
+For searching and accessing an element in a singly linked list, the time complexity is O(n) in the worst case, as we may have to traverse the entire list to find the element. For insertion and deletion, the time complexity is O(1) when inserting or deleting from the head of the list, as we only need to update the head reference. For inserting or deleting from any other location in the list, the time complexity is O(n), as we may have to traverse the list to find the location.
 
 | Access | Search |   Insertion    |    Deletion    |
 | :----: | :----: | :------------: | :------------: |

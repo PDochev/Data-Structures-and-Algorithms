@@ -32,18 +32,19 @@ Think of your daily commute on the subway as a real-world example of a doubly li
 
 ### Time Complexity
 
-For searching and accessing an element in a linked list, the time complexity is O(n) in the worst case, as we may have to traverse the entire list to find the element. For insertion and deletion, the time complexity is O(1) when inserting or deleting from the head of the list, as we only need to update the head reference. For inserting or deleting from any other location in the list, the time complexity is O(n), as we may have to traverse the list to find the location.
+For searching and accessing an element in a doubly linked list, the time complexity is O(n) in the worst case, as we may have to traverse the entire list to find the element. For insertion and deletion, the time complexity is O(1) when inserting or deleting from the head or tail of the list, as we only need to update the head or tail references. For inserting or deleting from any other location in the list, the time complexity is O(n), as we may have to traverse the list to find the location.
 
 | Access | Search |   Insertion    |    Deletion    |
 | :----: | :----: | :------------: | :------------: |
 |  O(n)  |  O(n)  | O(1) - on head | O(1) - on head |
+|        |        | O(1) - on tail | O(1) - on tail |
 |        |        | O(n) - on any  | O(n) - on any  |
 |        |        | other location | other location |
 |        |        |  (Traversing)  |  (Traversing)  |
 
 ### Space Complexity
 
-Space complexity is O(n) for a singly linked list, as we need to allocate memory for each node in the list.
+Space complexity for a doubly linked list is O(n), as we are storing n elements in the list.
 
 ## References
 
