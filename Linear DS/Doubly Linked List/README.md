@@ -28,7 +28,7 @@ Think of your daily commute on the subway as a real-world example of a doubly li
 
 ---
 
-![Singly_Linked_List](Doubly_List_Middle.png)
+![Singly_Linked_List](Doubly_List_Middle.svg)
 
 ## Complexities
 
