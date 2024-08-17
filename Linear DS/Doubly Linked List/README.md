@@ -48,6 +48,8 @@ For searching and accessing an element in a doubly linked list, the time complex
 
 Space complexity for a doubly linked list is O(n), as we are storing n elements in the list.
 
+## Use Cases
+
 ## References
 
 - [Codecademy](https://www.codecademy.com)

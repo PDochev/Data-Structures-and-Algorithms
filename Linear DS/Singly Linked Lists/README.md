@@ -37,6 +37,8 @@ For searching and accessing an element in a singly linked list, the time complex
 
 Space complexity is O(n) for a singly linked list, as we need to allocate memory for each node in the list.
 
+## Use Cases
+
 ## References
 
 - [Codecademy](https://www.codecademy.com)
