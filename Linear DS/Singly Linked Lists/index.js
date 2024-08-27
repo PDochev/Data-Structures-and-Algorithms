@@ -26,6 +26,11 @@ class LinkedList {
     if (currentHead !== null) {
       this.head.setNextNode(currentHead);
     }
+
+    // Alternative
+    // const newHead = new Node(data);
+    // newHead.next = this.head;
+    // this.head = newHead
   }
   // Adding a new node to the tail of the linked list
   // The addToTail() method adds a new node with the specified data to the end of the linked list.
@@ -71,6 +76,9 @@ class LinkedList {
     }
     if (this.head.data === matchingData) {
       return this.removeHead();
+
+      // ALternative
+      // this.head = this.head.getNextNode();
     }
     let currentNode = this.head;
     // while (currentNode !== null)
@@ -82,6 +90,10 @@ class LinkedList {
         // console.log(matchingNode.getNextNode());
         currentNode.setNextNode(matchingNode.getNextNode());
         return matchingNode;
+
+        // Alternative
+        // currentNode.next = currentNode.next.next;
+        // return;
       }
       currentNode = currentNode.getNextNode();
     }
@@ -193,6 +205,36 @@ function swapNodes(list, data1, data2) {
 //The worst case for time complexity in swapNodes() is if both while loops must iterate all the way through to the end (either if there are no matching nodes, or if the matching node is the tail).
 //This means that it has a linear big O runtime of O(n), since each while loop has a O(n) runtime, and constants are dropped.
 //There are four new variables created in the function regardless of the input, which means that it has a constant space complexity of O(1).
+
+// Reversing a Linked List
+// The reverseLinkedList() function takes a linked list as input and reverses the order of the nodes in the list.
+// It uses three pointers to keep track of the previous, current, and next nodes while iterating through the list.
+// The function reverses the pointers of the current node to point to the previous node, then moves the pointers one position ahead.
+// The time complexity of the reverseLinkedList() function is O(n) since it has to iterate through the entire list to reverse the order of the nodes.
+// The space complexity is O(1) since it only creates a constant number of new variables.
+
+function reverseLinkedList(linkedList) {
+  let prev = null;
+  let current = linkedList.head;
+  let next = null;
+
+  while (current !== null) {
+    // Store next
+    next = current.getNextNode();
+
+    // Reverse current node's pointer
+    current.setNextNode(prev);
+
+    // Move pointers one position ahead
+    prev = current;
+    current = next;
+  }
+
+  // Set the new head of the reversed list
+  linkedList.head = prev;
+
+  return linkedList;
+}
 
 // Two-Pointer Linked List Techniques
 // Many common singly linked list problems can be solved by iterating with two pointers. This is sometimes known as the runner technique.

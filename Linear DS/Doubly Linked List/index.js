@@ -116,7 +116,6 @@ class DoublyLinkedList {
 
   // TODO: Iterate from the tail to the head if the data is closer to the tail.
 
-
   removeByData(data) {
     let nodeToRemove;
     let currentNode = this.head;
