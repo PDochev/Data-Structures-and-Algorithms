@@ -64,9 +64,19 @@ class LinkedList {
     return removedHead.data;
   }
 
+  // Removing the tail node from the linked list
+  // The removeTail() method removes the tail node from the linked list by iterating through the list to find the second-to-last node.
+  // It sets the next node of the second-to-last node to null, indicating the end of the list.
+
   removeTail() {
     let currentNode = this.head;
     let previousNode = null;
+
+    if (!this.head || !this.head.getNextNode()) {
+      this.head = null;
+      return;
+    }
+    
     while (currentNode.getNextNode() !== null) {
       previousNode = currentNode;
       currentNode = currentNode.getNextNode();
