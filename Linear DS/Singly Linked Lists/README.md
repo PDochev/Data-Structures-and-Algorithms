@@ -39,6 +39,8 @@ Space complexity is O(n) for a singly linked list, as we need to allocate memory
 
 ## Use Cases
 
+Singly linked lists are used in a variety of applications. For example, singly linked lists are used in web browsers to implement the history feature. In text editors, singly linked lists are used to implement undo functionality. In operating systems, singly linked lists are used to manage processes and tasks. In computer science, singly linked lists are used in algorithms like depth-first search and depth-first traversal of trees.
+
 ## References
 
 - [Codecademy](https://www.codecademy.com)
