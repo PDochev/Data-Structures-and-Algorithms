@@ -64,6 +64,17 @@ class LinkedList {
     return removedHead.data;
   }
 
+  removeTail() {
+    let currentNode = this.head;
+    let previousNode = null;
+    while (currentNode.getNextNode() !== null) {
+      previousNode = currentNode;
+      currentNode = currentNode.getNextNode();
+    }
+    previousNode.setNextNode(null);
+    return;
+  }
+
   // Searching for a node with matching data and removing it from the linked list
   // The removeNode() method searches for a node with the specified data in the linked list and removes it.
   // It iterates through the list to find the node with the matching data and updates the references of the previous and next nodes to remove the node.
@@ -128,7 +139,8 @@ seasons.removeHead();
 console.log(seasons.printList());
 seasons.removeNode("fall");
 console.log(seasons.printList());
-
+console.log(seasons.removeTail());
+console.log(seasons.printList());
 console.log(seasons);
 
 const testList = new LinkedList();
