@@ -12,7 +12,7 @@ Queues can be implemented using a linked list as the underlying data structure. 
 
 - **Enqueue**: Adds data to the “back” or end of the queue
 
-- **Dequeue**: Provides and removes data from the “front” or beginning of the queue
+- **Dequeue**: Removes data from the “front” or beginning of the queue
 
 - **Peek**: Reveals data from the “front” of the queue without removing it
 
