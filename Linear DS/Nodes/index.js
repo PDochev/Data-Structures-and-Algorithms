@@ -18,6 +18,10 @@ class Node {
     }
   }
 
+  setNext(data) {
+    this.next = data;
+  }
+
   setPreviousNode(node) {
     if (node instanceof Node || node === null) {
       this.previous = node;
