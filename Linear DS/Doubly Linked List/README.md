@@ -50,6 +50,8 @@ Space complexity for a doubly linked list is O(n), as we are storing n elements 
 
 ## Use Cases
 
+Doubly linked lists are used in a variety of applications. For example, doubly linked lists are used in web browsers to implement the forward and back buttons. In text editors, doubly linked lists are used to implement undo and redo functionality. In operating systems, doubly linked lists are used to implement task scheduling. In computer science, doubly linked lists are used in algorithms like quicksort and mergesort.
+
 ## References
 
 - [Codecademy](https://www.codecademy.com)
