@@ -24,7 +24,7 @@ Queues can be implemented using a linked list as the underlying data structure. 
 
 ### Time Complexity
 
-| Enqueue | Dequeue | Peak | IsEmpty | IsFull |
+| Enqueue | Dequeue | Peek | IsEmpty | IsFull |
 | :-----: | :-----: | :--: | :-----: | :----: |
 |  O(1)   |  O(1)   | O(1) |  O(1)   |  O(1)  |
 

@@ -1,15 +1,12 @@
 const Node = require("../Nodes/index.js");
-const swapNodes = require("./Problems-Solutions/swapNodes.js");
-const reverseLinkedList = require("./Problems-Solutions/reverseLinkedList.js");
-const {
-  arrayNthLast,
-  nthLastNode,
-} = require("./Problems-Solutions/nthLastNode.js");
+const swapNodes = require("./Problems/swapNodes.js");
+const reverseLinkedList = require("./Problems/reverseLinkedList.js");
+const { arrayNthLast, nthLastNode } = require("./Problems/nthLastNode.js");
 const {
   arrayMiddle,
   findMiddle,
   findMiddleAlternate,
-} = require("./Problems-Solutions/findMiddle.js");
+} = require("./Problems/findMiddle.js");
 
 // Singly Linked Lists
 // A linked list is a linear data structure that consists of a sequence of elements, each of which is connected to the next element in the sequence.

@@ -4,8 +4,8 @@ class Queue {
   constructor(maxSize = Infinity) {
     this.queue = new LinkedList();
     this.size = 0;
-    this.maxSize = maxSize;
     // Bounded queue size
+    this.maxSize = maxSize;
   }
 
   // Check if the queue is full or not , if full return false , else return true
@@ -48,6 +48,7 @@ class Queue {
   // Peek at the first element from the front of the queue
   peek() {
     if (!this.isEmpty()) {
+      console.log(this.queue.head.data);
       return this.queue.head.data;
     } else {
       return null;
@@ -68,8 +69,10 @@ restaurantOrder.enqueue("apple pie");
 restaurantOrder.enqueue("roast chicken");
 restaurantOrder.enqueue("quinoa salad");
 console.log("\nFood preparing...\n");
+restaurantOrder.peek(); // Apple pie
 restaurantOrder.dequeue();
 restaurantOrder.dequeue();
+restaurantOrder.peek(); // Quinoa salad
 restaurantOrder.dequeue();
 console.log("All orders ready!");
 

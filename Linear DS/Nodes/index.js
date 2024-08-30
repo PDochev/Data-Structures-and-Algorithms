@@ -18,9 +18,9 @@ class Node {
     }
   }
 
-  setNext(data) {
-    this.next = data;
-  }
+  // setNext(data) {
+  //   this.next = data;
+  // }
 
   setPreviousNode(node) {
     if (node instanceof Node || node === null) {
