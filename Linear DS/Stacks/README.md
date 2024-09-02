@@ -1,4 +1,4 @@
-# Stacks
+# Stack
 
 ![Stack Data Structure](Stack_v3.svg)
 
