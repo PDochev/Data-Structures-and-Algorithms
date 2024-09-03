@@ -130,6 +130,29 @@ class LinkedList {
     return null;
   }
 
+  // Searching for a node with matching data in the linked list
+  findNodeIteratively(data) {
+    let currentNode = this.head;
+    while (currentNode !== null) {
+      if (currentNode.data === data) {
+        return currentNode;
+      }
+      currentNode = currentNode.next;
+    }
+    return null;
+  }
+
+  // Searching for a node with matching data in the linked list recursively
+  findNodeRecursively(data, currentNode = this.head) {
+    if (currentNode === null) {
+      return null;
+    } else if (currentNode.data === data) {
+      return currentNode;
+    } else {
+      return this.findNodeRecursively(data, currentNode.next);
+    }
+  }
+
   // Printing the linked list
   // The printList() method traverses the linked list and prints the data of each node in the list.
   // It starts at the head node and moves to the next node until it reaches the end of the list.
