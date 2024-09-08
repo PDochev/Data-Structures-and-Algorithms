@@ -1,6 +1,6 @@
 # Nodes
 
-![Node](Node.png)
+![Node](Node_v2.svg)
 
 Nodes form the basis of all data structures. They are the building blocks for more complex data structures like linked lists, stacks, queues, and trees.
 
