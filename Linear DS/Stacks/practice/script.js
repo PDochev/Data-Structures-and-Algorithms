@@ -1,5 +1,6 @@
 const Stack = require("../index.js");
 const prompt = require("prompt-sync")();
+
 // ------------------------------
 // Initialization
 // ------------------------------
@@ -7,6 +8,7 @@ const backPages = new Stack();
 const nextPages = new Stack();
 
 let currentPage = "Start Page";
+
 // ------------------------------
 // Helper Functions
 // ------------------------------
@@ -43,6 +45,7 @@ function nextPage() {
 /*
  * The following strings are used to prompt the user
  */
+
 const baseInfo = "\nEnter a url";
 const backInfo = "B|b for back page";
 const nextInfo = "N|n for next page";
