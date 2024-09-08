@@ -1,6 +1,6 @@
 # Singly Linked Lists
 
-![Singly_Linked_List](Linked_List.svg)
+![Singly_Linked_List](Linked_List_bg.svg)
 
 A singly linked list is a data structure that consists of a sequence of nodes. Each node contains data and a reference (or link) to the next node in the sequence. The first node is called the head, and the last node is called the tail. The tail node has a reference to null, indicating the end of the list.
 
