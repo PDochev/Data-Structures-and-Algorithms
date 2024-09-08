@@ -1,6 +1,6 @@
 # Queues
 
-![Queue Data Structure](Queue.svg)
+![Queue Data Structure](Queue_v1.svg)
 
 A queue is a linear data structure that follows the First In First Out (FIFO) principle. This means that the first element added (enqueue) to the queue will be the first one to be removed (dequeue). A queue is similar to a line of people waiting for a service, where the first person to arrive is the first to be served.
 
