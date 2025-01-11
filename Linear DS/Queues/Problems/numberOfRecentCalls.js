@@ -44,6 +44,8 @@ class RecentCounter {
 //   }
 // }
 
-const rec1 = new RecentCounter();
-console.log("REC" + rec1.ping(1));
-console.log("REC" + rec1.ping(5));
+const rec = new RecentCounter();
+console.log("REC" + rec.ping(1));
+console.log("REC" + rec.ping(100));
+console.log("REC" + rec.ping(3001));
+console.log("REC" + rec.ping(3002));
