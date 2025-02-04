@@ -2,7 +2,10 @@
 
 ![Trees Data Structure](Trees.svg)
 
-Trees are an essential data structure for storing hierarchical data with a directed flow. They are composed of nodes that are connected by edges. Each tree has a root node, and every node in the tree is connected by edges. The root node is the topmost node in the tree, and it does not have any parent nodes. The nodes that are connected to the root node are called child nodes. A node can have zero or more children. The node that has children is called the parent node. The nodes that do not have any children are called leaf nodes. The height of a tree is the length of the longest path to a leaf node. The depth of a node is the length of the path to its root node. The height of the root node is the height of the tree. The depth of the root node is zero.
+Trees are an essential data structure for storing hierarchical data with a directed flow.
+They are composed of nodes that are connected by edges. Each tree has a root node, and every node in the tree is connected by edges.
+The root node is the topmost node in the tree, and it does not have any parent nodes. The nodes that are connected to the root node are called child nodes.
+A node can have zero or more children. The node that has children is called the parent node. The nodes that do not have any children are called leaf nodes.
 
 - root: A node which has no parent. One per tree.
 - parent: A node which references other nodes.
@@ -21,7 +24,8 @@ Trees can be both wide and deep, but each node will only ever have at most one p
 
 Each time we move from a parent to a child, we’re moving down a level. Depending on the orientation we refer to this as the depth (counting levels down from the root node) or height (counting levels up from a leaf node).
 
-Trees are used in computer science and software engineering to represent data in a hierarchical manner. They are used in various applications, such as file systems, databases, and network routing algorithms. Trees are also used in algorithms like binary search trees, AVL trees, and red-black trees to efficiently store and retrieve data.
+Trees are used in computer science and software engineering to represent data in a hierarchical manner. They are used in various applications, such as file systems, databases, and network routing algorithms.
+Trees are also used in algorithms like binary search trees, AVL trees, and red-black trees to efficiently store and retrieve data.
 
 A binary tree is a type of tree where each parent can have no more than two children, known as the left child and right child.
 
