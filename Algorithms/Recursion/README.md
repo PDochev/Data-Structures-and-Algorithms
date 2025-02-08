@@ -2,7 +2,12 @@
 
 Recursion is a technique in which a function makes one or more calls to itself. This technique provides a way to break complicated problems down into simple problems which are easier to solve.
 
-## Examples of Recursion
+## Concepts of Recursion
+
+1. **Recursive Case**: The condition under which the function will call itself.
+2. **Base Case**: The condition under which the function will stop calling itself and return a value.
+
+### Examples of Recursion
 
 1. Factorial Calculation
    - Factorial of a number n (n!) is the product of all positive integers less than or equal to n.
