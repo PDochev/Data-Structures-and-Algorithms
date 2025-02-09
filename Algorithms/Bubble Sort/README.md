@@ -21,15 +21,3 @@ return array
 ### Space Complexity
 
 - The space complexity of Bubble Sort is O(1) because it only requires a constant amount of extra space for temporary variables.
-
-#### Examples of Bubble Sort
-
-1. **Sorting a List**:
-   - Given a list of integers, the bubble sort algorithm sorts it in ascending order by repeatedly comparing adjacent pairs and swapping them if they are out of order.
-   - Example: Initial List: [5, 3, 8, 4, 2] → Sorted List: [2, 3, 4, 5, 8]
-2. **Sorting a List in Descending Order**:
-   - Given a list of integers, the bubble sort algorithm sorts it in descending order by repeatedly comparing adjacent pairs and swapping them if they are out of order.
-   - Example: Initial List: [5, 3, 8, 4, 2] → Sorted List: [8, 5, 4, 3, 2]
-3. **Sorting a List of Strings**:
-   - Given a list of strings, the bubble sort algorithm sorts it in lexicographical order by repeatedly comparing adjacent pairs and swapping them if they are out of order.
-   - Example: Initial List: ['apple', 'banana', 'cherry', 'date'] → Sorted List: ['apple', 'banana', 'cherry', 'date']
