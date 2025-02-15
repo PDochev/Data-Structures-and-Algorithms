@@ -22,3 +22,7 @@ Graphs are a collection of nodes (vertices) and edges that connect them. They ar
 - Removing a vertex
 - Removing an edge
 - Traversal (Depth-First Search, Breadth-First Search)
+
+### References
+
+- [Codecademy](https://www.codecademy.com)

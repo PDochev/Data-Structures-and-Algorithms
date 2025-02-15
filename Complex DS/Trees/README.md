@@ -30,3 +30,7 @@ Trees are also used in algorithms like binary search trees, AVL trees, and red-b
 A binary tree is a type of tree where each parent can have no more than two children, known as the left child and right child.
 
 A binary search tree is a binary tree where the left child is less than the parent, and the right child is greater than the parent. This property allows for efficient searching, inserting, and deleting of values.
+
+## References
+
+- [Codecademy](https://www.codecademy.com)

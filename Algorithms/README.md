@@ -53,3 +53,7 @@ Like with time complexity, space complexity denotes space growth in relation to 
 ##### Summary
 
 In summary, asymptotic notations are essential for analyzing the performance of algorithms, allowing developers to select the most efficient algorithms for their needs.
+
+###### References
+
+- [Codecademy](https://www.codecademy.com)

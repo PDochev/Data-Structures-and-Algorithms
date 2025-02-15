@@ -23,3 +23,7 @@ Recipe for retrieving from a hash table:
 - Check if the array at that index has contents, if so, check the key saved there.
 - If the key matches the one you're looking for, return the value.
 - If the keys don't match, continue to the next position depending on your collision strategy.
+
+## References
+
+- [Codecademy](https://www.codecademy.com)

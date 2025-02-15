@@ -15,3 +15,7 @@ When merging two single-element lists, we check if the first element is smaller 
 ## Space Complexity
 
 - The space complexity of Merge Sort is O(n) because it requires additional space to hold the temporary arrays used for merging.
+
+### References
+
+- [Codecademy](https://www.codecademy.com)

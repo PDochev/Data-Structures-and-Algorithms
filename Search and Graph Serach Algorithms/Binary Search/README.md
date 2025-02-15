@@ -55,3 +55,7 @@ Without any knowledge about the ordering, we would resort to a linear search tak
 ### Space Complexity
 
 - The space complexity is O(1) because we are not using any additional space that grows with the input size.
+
+#### References
+
+- [Codecademy](https://www.codecademy.com)

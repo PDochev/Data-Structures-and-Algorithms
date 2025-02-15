@@ -28,3 +28,7 @@ Return the sorted array
 ### Space Complexity
 
 - The space complexity of Quick Sort is O(log n) because it requires a small amount of additional space for the recursive stack, and it performs in-place sorting.
+
+#### References
+
+- [Codecademy](https://www.codecademy.com)

@@ -17,3 +17,7 @@ Heapifying up and down are the two primary operations used to maintain the heap 
 - left child: (index \* 2) + 1
 - right child: (index \* 2) + 2
 - parent: (index - 1) / 2 - not used on the root!
+
+### References
+
+- [Codecademy](https://www.codecademy.com)
