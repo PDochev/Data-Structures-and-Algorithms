@@ -95,6 +95,10 @@ class Graph {
     }
   }
 
+  getVertexByValue(value) {
+    return this.vertices.find((vertex) => vertex.data === value);
+  }
+
   print() {
     this.vertices.forEach((vertex) => vertex.print());
   }
