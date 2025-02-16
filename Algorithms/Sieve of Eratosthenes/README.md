@@ -48,7 +48,7 @@ The complexity of the Sieve of Eratosthenes with optimizations is O(n log(log n)
 
 - The space complexity of the Sieve of Eratosthenes is O(n) as it requires an array to keep track of the prime status of each number.
 
-### Optimizations
+## Optimizations
 
 **End Boundary**  
 In our basic implementation, the outer loop iterated from 2 to n. Because the inner loop marks multiples of a base value, we only need to check individual numbers lower than the square root of n. Consider the example of a limit of 10:
