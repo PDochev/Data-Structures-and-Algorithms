@@ -1,97 +1,59 @@
 # Whiteboarding Interview
 
+Whiteboarding is a common interview technique used to evaluate a candidate’s problem-solving skills. It’s a way for the interviewer to see how you approach a problem and how you communicate your thought process.
+
 ## 1. Clarify the Problem
 
-Software development is full of ambiguity. Programming requires concrete deliverables, but company needs can be murky. Even when the need is clear, a feature could have dozens of possible implementations. The ability to clearly define a problem is an important skill to demonstrate.
+When you’re given a problem, it’s important to make sure you understand what’s being asked. Ask questions to clarify the problem and make sure you and the interviewer are on the same page.
 
-When the interviewer presents their technical question, repeat the question back to the interviewer in your own words. This gives you a moment to think and will resolve any glaring misunderstandings.
+Ask about the input and output of the function. What should the function return? What are the constraints on the input? Are there any edge cases you should consider?
 
-Once you’ve repeated the question, ask every clarifying question that comes to mind.
+If you’re unsure about the problem, ask the interviewer to clarify. It’s better to ask questions and make sure you understand the problem than to make assumptions and get it wrong.
 
-Assumptions must be communicated to the interviewer so there is agreement on the scope of the problem.
-
-For example, if asked:
-
-Write a function that returns duplicate characters in string.
-
-Here are some questions which may come to mind:
-
-What is the desired return value?
-True|False, a list of characters, or …?
-
-Do punctuation and spaces count as “characters”?
-
-Should case be considered?
-are "a" and "A" duplicates?
-
-Should we be checking for Unicode characters?
-
-Can we assume it’s a 26 character alphabet?
+Once you understand the problem, repeat it back to the interviewer to make sure you have it right.
 
 ## 2. Create Inputs and finding edge cases
 
-When the question is clear, we then produce concrete inputs and outputs. These inputs guide a solution for the remainder of the interview so write them on the board!
+When you’re given a problem, it’s important to create test inputs to help you understand the problem and to test your solution.
 
-You may still be unclear how to solve the problem in code, but it’s certain that given an input, X, your function will produce an output, Y.
+Create a few test inputs to help you understand the problem. What should the function return for these inputs? What are the edge cases you should consider?
 
 Make one input the happy path: input that reflects a common scenario.
 
-For example, you’re asked to write a function which capitalizes the first letter of an input string.
+Make another input an edge case: input that reflects an unusual scenario.
 
-A good input could be "apple", which returns "Apple" because this demonstrates the function’s purpose.
+Make a third input an error case: input that reflects an error scenario.
 
-If the input were "Apple", it would return "Apple". That’s correct but less informative.
-
-Also think about edge cases, or inputs which do not reflect a common scenario and may cause problems.
-
-For the capitalization function, what should you return if given None as input? Or a number? Or an empty string? Or a special character?
+When you’re creating test inputs, think about the constraints of the problem. What are the limits on the input? What are the edge cases you should consider?
 
 ## 3. Outline the Solution
 
-It’s time to start breaking down the problem by category.
+Before you start coding, outline your solution on the whiteboard. This is a chance to show the interviewer your thought process and how you approach the problem.
 
-Given a question which requires the use of a stack, what do you know about stacks? Have you encountered other problems that use stacks and how were they solved?
+Explain your approach to the interviewer. Talk through the steps you’ll take to solve the problem. This is a chance to show your problem-solving skills and your ability to communicate your thought process.
 
-Is this a searching question? Can you sort the input and will that help? Does this problem sound like it can be modeled as a graph, with vertices and connected edges?
-
-Understanding the applications of different data structures is very useful! The more questions you practice, the more you will be able to see patterns between problems.
-
-This step varies the most because it requires details of the specific problem, but regardless of the question make certain you are communicating with the interviewer as a potential co-worker. Show them your thought process!
+When you’re outlining the solution, think about the steps you’ll take to solve the problem. What are the key steps you need to take to solve the problem? What are the edge cases you should consider?
 
 During this step, the interviewer may make suggestions on how to proceed. Acknowledge the interviewer and incorporate their suggestions into your approach.
 
 **Don’t disregard their input! It gives the impression you would be difficult to work with on the job.**
 
-When you and the interviewer are satisfied with a workable solution, write the steps next to your input. Follow these steps as you write code on the board.
-
 ## 4. Code the Solution
 
-Writing code on the board is a collaborative process. Refer to your outline and explain the step you’re implementing.
+Once you have an outline of your solution on the whiteboard, start coding the solution. Write out the code on the whiteboard, explaining your thought process as you go.
 
-The goal is to be facing the interviewer when talking through the implementation and facing the board when you’re writing the code.
-
-Try to avoid writing code in silence or narrating at a low level like “for… i… in… range… length of the list… colon” when writing for i in range(len(input_list))
-
-When you’re finished with the implementation, look it over for any mistaken syntax or logical errors.
+When you’re coding the solution, write out the code in a clear and organized way. Make sure your code is easy to read and understand.
 
 ## 5. Test the Solution
 
-With a working implementation on the whiteboard, use the test inputs to walk through the evaluation of your code.
+After you’ve written out the code, test your solution with the test inputs you created earlier. Walk through the code with the test inputs to make sure it’s working as expected.
 
-Write out any temporary variables on the board and update them when they change during execution.
+Explain your test inputs to the interviewer. Walk through the code with the test inputs, explaining what each step does and how it affects the output.
 
-This is another opportunity to showcase your communication skills, and will help you catch any logical errors which you may not have noticed in earlier steps.
-
-If you catch an error, don’t panic! Mistakes happen. Explain the issue and talk through what you can do to fix the bug.
-
-Your interviewer may want to see you write the correction or they may be satisfied with the explanation. Either way, you’ve demonstrated your ability to debug and problem solve.
+If the code doesn’t work as expected, go back and debug the code. Walk through the code again with the test inputs to find the issue and fix it.
 
 ## 6. Analyze the Solution
 
-Analyze the time and space complexity of the solution. With this step you are demonstrating that you care about the efficiency of your code.
+After you’ve tested the solution, analyze the code with the interviewer. Talk through the code and explain how it works. This is a chance to show your problem-solving skills and your ability to communicate your thought process.
 
-Explain your code’s big O notation. If you can optimize to a more efficient runtime, explain how that would work. If you can’t optimize, explain why it’s not possible.
-
-### References
-
-- [Codecademy](https://www.codecademy.com)
+Explain the time and space complexity of the code. Talk about the efficiency of the code and how it could be improved.
