@@ -1,8 +1,6 @@
 # Graph Traversals
 
-Using graphs to model complex networks is pretty swell, but one way that graphs can really come in handy is with graph search algorithms. You can use a graph search to traverse the entirety of a graph data structure in search of a specific vertex value.
-
-There are two common approaches to using a graph search to progress through a graph:
+Graph traversal is the process of visiting all the vertices of a graph. There are two main ways to traverse a graph: depth-first and breadth-first.
 
 - depth-first search, known as DFS follows each possible path to its end
 - breadth-first search, known as BFS broadens its search from the point of origin to an ever-expanding circle of neighboring vertices
@@ -33,9 +31,9 @@ Well, it turns out that in addition to path-finding, depth-first search is prett
 
 There are three main traversal orders that you’ll come across for graph traversal:
 
-- Preorder, in which each vertex is added to the “visited” list and added to the output list BEFORE getting added to the stack
-- Postorder, in which each vertex is added to the “visited” list and added to the output list AFTER it is popped off the stack
-- Reverse Post-Order (also known as Topological Sort), which returns an output list that is exactly the reverse of the post-order list
+- `Preorder`, in which each vertex is added to the “visited” list and added to the output list BEFORE getting added to the stack
+- `Postorder`, in which each vertex is added to the “visited” list and added to the output list AFTER it is popped off the stack
+- `Reverse Post-Order` (also known as Topological Sort), which returns an output list that is exactly the reverse of the post-order list
 
 #### Time Complexity
 
@@ -46,5 +44,7 @@ There are three main traversal orders that you’ll come across for graph traver
 - The space complexity is O(V) because we are using additional space that grows with the input size to store vertices in the graph.
 
 ##### References
+
+Front End Engineer Career Path / Interview Prep / Search and Graph Search Algorithms / Graph Traversals
 
 - [Codecademy](https://www.codecademy.com)

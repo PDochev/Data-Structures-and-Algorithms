@@ -4,17 +4,15 @@ Binary search trees are a type of tree data structure with the added condition t
 
 Binary search requires a sorted data-set. We then take the following steps:
 
-1. Check the middle value of the dataset.
+1. Find the middle element of the data set
 
-- If this value matches our target we can return the index.
+2. If the middle element is equal to the target value, we have found the value
 
-2. If the middle value is less than our target
+3. If the middle element is less than the target value, we repeat the search on the right half of the data set
 
-- Start at step 1 using the right half of the list.
+4. If the middle element is greater than the target value, we repeat the search on the left half of the data set
 
-3. If the middle value is greater than our target
-
-- Start at step 1 using the left half of the list.
+5. If the target value is not found, we return -1
 
 ## Binary Tree
 
@@ -22,22 +20,28 @@ A binary tree is an efficient data structure for fast data storage and retrieval
 
 Each node has the following properties:
 
-- data
-- a depth value, where depth of 1 indicates the top level of the tree and a depth greater than 1 is a level somewhere lower in the tree
-- a left pointer that points to a left child which is itself a binary tree, and must have a data lesser than the root node’s data
-- a right pointer that points to a right child which is itself a binary tree, and must have a data greater than the root node’s data
+- `data`
+- `a depth value`, where depth of 1 indicates the top level of the tree and a depth greater than 1 is a level somewhere lower in the tree
+- `a left pointer` that points to a left child which is itself a binary tree, and must have a data lesser than the root node’s data
+- `a right pointer` that points to a right child which is itself a binary tree, and must have a data greater than the root node’s data
 
 ## Traversing a Binary Tree
 
-There are two main ways of traversing a binary tree: breadth-first and depth-first. With breadth-first traversal, we begin traversing at the top of the tree’s root node, displaying its data and continuing the process with the left child node and the right child node. Descend a level and repeat this step until we finish displaying all the child nodes at the deepest level from left to right.
+There are two main ways of traversing a binary tree: breadth-first and depth-first.
 
-With depth-first traversal, we always traverse down each left-side branch of a tree fully before proceeding down the right branch. However, there are three traversal options:
+### Breadth-First Traversal
 
-- Preorder is when we perform an action on the current node first, followed by its left child node and its right child node
-- Inorder is when we perform an action on the left child node first, followed by the current node and the right child node
-- Postorder is when we perform an action on the left child node first, followed by the right child node and then the current node
+Breadth-first traversal visits all the nodes of a level before moving to the next level. It uses a queue to keep track of the nodes to visit.
 
-### Time Complexity
+### Depth-First Traversal
+
+With depth-first traversal, we always traverse down each left-side branch of a tree fully before proceeding down the right branch. There are three main ways to perform a depth-first traversal:
+
+1. In-order traversal (left, root, right)
+2. Pre-order traversal (root, left, right)
+3. Post-order traversal (left, right, root)
+
+#### Time Complexity
 
 In each iteration, we are cutting the list in half. The time complexity is O(log N). A sorted list of 64 elements will take at most log2(64) = 6 comparisons.
 
@@ -52,10 +56,12 @@ In the worst case:
 
 Without any knowledge about the ordering, we would resort to a linear search taking O(N) time.
 
-### Space Complexity
+#### Space Complexity
 
 - The space complexity is O(1) because we are not using any additional space that grows with the input size.
 
 #### References
+
+Front End Engineer Career Path / Interview Prep / Search and Graph Search Algorithms / Binary Search and Search Trees
 
 - [Codecademy](https://www.codecademy.com)

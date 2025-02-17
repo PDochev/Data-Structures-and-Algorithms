@@ -4,14 +4,15 @@ Dijkstra’s algorithm is a method for finding the shortest distance from a give
 
 Dijkstra’s Algorithm works as following:
 
-1. Instantiate a dictionarythat will eventually map vertices to their distance from the start vertex
-2. Assign the start vertex a distance of 0 in a min heap
-3. Assign every other vertex a distance of infinity in a min heap
-4. Remove the vertex with the smallest distance from the min heap and set that to the current vertex
-5. For the current vertex, consider all of its adjacent vertices and calculate the distance to them as (distance to the current vertex) + (edge weight of current vertex to adjacent vertex).
-6. If this new distance is less than the current distance, replace the current distance.
-7. Repeat 4 and 5 until the heap is empty
-8. After the heap is empty, return the distances
+1. Start at the source node.
+2. Set the distance of the source node to 0 and all other nodes to infinity.
+3. Add all nodes to a priority queue.
+4. While the priority queue is not empty:
+   - Dequeue the node with the smallest distance.
+   - For each neighbor of the node:
+     - Calculate the distance to the neighbor through the current node.
+     - If this distance is less than the current distance, update the neighbor’s distance.
+5. Return the distances.
 
 ## Time Complexity
 
@@ -24,7 +25,3 @@ In the worst case, we would update the min-heap every iteration. Since there are
 ## Space Complexity
 
 - The space complexity is O(V) because we are using additional space that grows with the input size to store vertices in the graph.
-
-### References
-
-- [Codecademy](https://www.codecademy.com)
