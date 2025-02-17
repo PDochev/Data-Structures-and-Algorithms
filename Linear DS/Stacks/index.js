@@ -1,5 +1,6 @@
 const LinkedList = require("../Singly Linked Lists/index.js");
 
+// Implementing a Stack using a Linked List
 class Stack {
   constructor(maxSize = Infinity) {
     this.stack = new LinkedList();

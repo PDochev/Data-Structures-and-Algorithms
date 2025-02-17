@@ -8,14 +8,6 @@ const {
   findMiddleAlternate,
 } = require("./Problems/findMiddle.js");
 
-// Singly Linked Lists
-// A linked list is a linear data structure that consists of a sequence of elements, each of which is connected to the next element in the sequence.
-// Each element in a linked list is called a node, and each node contains two key pieces of information: the data and a reference to the next node.
-// The first node in a linked list is called the head, and the last node is called the tail. The tail node's reference to the next node is null, indicating the end of the list.
-// There are two main types of linked lists: singly linked lists and doubly linked lists. In a singly linked list, each node contains a reference to the next node in the sequence.
-// In a doubly linked list, each node contains references to both the next node and the previous node in the sequence.
-// Linked lists are commonly used to implement other data structures like stacks, queues, and graphs.
-
 // Implementing a Singly Linked List
 class LinkedList {
   constructor() {

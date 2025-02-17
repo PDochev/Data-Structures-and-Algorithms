@@ -2,9 +2,9 @@
 
 ![Doubly_Linked_List](Doubly_Linked_List_bg.svg)
 
-Like a singly linked list, a doubly linked list is comprised of a series of nodes. Each node contains data and two links (or pointers) to the next and previous nodes in the list. The head node is the node at the beginning of the list, and the tail node is the node at the end of the list. The head node’s previous pointer is set to null and the tail node’s next pointer is set to null.
+Doubly linked lists are a type of linked list where each node contains references to both the next node and the previous node in the sequence. This allows for bidirectional traversal of the list, meaning you can traverse the list in both forward and backward directions. The first node in the list is called the head, and the last node is called the tail. The head node has a reference to null for the previous node, and the tail node has a reference to null for the next node.
 
-Think of your daily commute on the subway as a real-world example of a doubly linked list. Your home is the head of the list, your place of work is the tail, and every stop in between is another node in the list. In the morning when you take the subway to get to work, you are traversing the list from the head to the tail, using the stop’s next pointer. While this can also be done using a singly linked list, a doubly linked list will also allow you to traverse back through the list easily, using the stop’s previous pointer. You will take the exact same route to get home, just in reverse.
+Think of a doubly linked list as a subway system where each station has a connection to the next station and the previous station. This allows you to travel in both directions along the subway line. In a doubly linked list, each node is like a station, and the connections between the stations allow you to move forward and backward through the list. Your home station is the head of the list, and the end of the line is the tail. You can travel in either direction along the subway line, just like you can traverse a doubly linked list in either direction.
 
 ## Common Operations
 
@@ -51,7 +51,3 @@ Space complexity for a doubly linked list is O(n), as we are storing n elements 
 ## Use Cases
 
 Doubly linked lists are used in a variety of applications. For example, doubly linked lists are used in web browsers to implement the forward and back buttons. In text editors, doubly linked lists are used to implement undo and redo functionality. In operating systems, doubly linked lists are used to implement task scheduling. In computer science, doubly linked lists are used in algorithms like quicksort and mergesort.
-
-## References
-
-- [Codecademy](https://www.codecademy.com)

@@ -1,6 +1,7 @@
 // Doubly Linked List
 const Node = require("../Nodes/index.js");
 
+// Implementing a Doubly Linked List
 class DoublyLinkedList {
   constructor() {
     this.head = null;

@@ -1,5 +1,6 @@
 const LinkedList = require("../Singly Linked Lists/index.js");
 
+// Implementing a Queue using a Linked List
 class Queue {
   constructor(maxSize = Infinity) {
     this.queue = new LinkedList();
