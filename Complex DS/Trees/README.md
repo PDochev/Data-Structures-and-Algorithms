@@ -2,17 +2,17 @@
 
 ![Trees Data Structure](Trees.svg)
 
-Trees are an essential data structure for storing hierarchical data with a directed flow.
-They are composed of nodes that are connected by edges. Each tree has a root node, and every node in the tree is connected by edges.
+Trees are an essential data structure for storing `hierarchical data` with a directed flow.
+They are composed of `nodes`that are connected by `edges`. Each tree has a root node, and every node in the tree is connected by edges.
 The root node is the topmost node in the tree, and it does not have any parent nodes. The nodes that are connected to the root node are called child nodes.
 A node can have zero or more children. The node that has children is called the parent node. The nodes that do not have any children are called leaf nodes.
 
-- root: The topmost node in a tree.
-- parent: A node which has child nodes connected to it.
-- child: A node that has a parent node connected to it.
-- sibling: Nodes that share the same parent node.
-- leaf: A node that does not have any children.
-- level: The height or depth of a tree. The distance between a node and the root node.
+- `root:` The topmost node in a tree.
+- `parent:` A node which has child nodes connected to it.
+- `child:` A node that has a parent node connected to it.
+- `sibling:` Nodes that share the same parent node.
+- `leaf:` A node that does not have any children.
+- `level:` The height or depth of a tree. The distance between a node and the root node.
 
 ## Tree Shapes
 

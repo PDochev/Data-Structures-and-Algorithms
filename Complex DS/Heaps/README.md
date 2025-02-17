@@ -1,6 +1,6 @@
 # Heaps
 
-Heaps are another variation of the tree data structure and are adept at keeping track of the maximum or minimum value held within, referred to as max-heaps and min-heaps, respectively. Specifically, heaps are a type of binary tree, since each child node is either greater or less than its parent (depending on if it’s a max-heap or min-heap). They are efficient for accessing the root value, which will either be the max or min (again, depending on the type of heap) and inserting new values.
+`Heaps` are another variation of the tree data structure and are adept at keeping track of the maximum or minimum value held within, referred to as `max-heaps` and `min-heaps`, respectively. Specifically, heaps are a type of binary tree, since each child node is either greater or less than its parent (depending on if it’s a max-heap or min-heap). They are efficient for accessing the root value, which will either be the max or min (again, depending on the type of heap) and inserting new values.
 
 In Min Heap the root node is the smallest value in the heap, and each parent node is smaller than its children.
 
@@ -14,6 +14,6 @@ Heapifying up and down are the two primary operations used to maintain the heap 
 
 ## Operations
 
-- left child: (index \* 2) + 1
-- right child: (index \* 2) + 2
-- parent: (index - 1) / 2 - not used on the root!
+- `left child:` (index \* 2) + 1
+- `right child:` (index \* 2) + 2
+- `parent:` (index - 1) / 2 - not used on the root!
