@@ -1,6 +1,7 @@
 // A priority queue is a specialized form of a min-heap, where the priority of a piece of data is stored alongside data,
 // and elements are popped based on the priority value.
 
+// Implementing a Priority Queue using a MinHeap
 class PriorityQueue {
   constructor() {
     this.heap = [null];

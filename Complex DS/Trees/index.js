@@ -1,3 +1,4 @@
+// Implementing a Tree
 class TreeNode {
   constructor(data) {
     this.data = data;

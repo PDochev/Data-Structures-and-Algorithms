@@ -1,3 +1,4 @@
+// Implementing a MaxHeap
 class MaxHeap {
   constructor() {
     this.heap = [null];
