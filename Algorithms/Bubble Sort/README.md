@@ -21,7 +21,3 @@ return array
 ### Space Complexity
 
 - The space complexity of Bubble Sort is O(1) because it only requires a constant amount of extra space for temporary variables.
-
-#### References
-
-- [Codecademy](https://www.codecademy.com)
