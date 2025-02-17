@@ -16,13 +16,13 @@ It is used to describe the average case scenario of an algorithm. We use big The
 
 ### Common Runtimes
 
-- Θ(1). This is constant runtime. This is the runtime when a program will always do the same thing regardless of the input. For instance, a program that only - - prints “hello, world” runs in Θ(1) because the program will always just print “hello, world”.
-- Θ(log N). This is logarithmic runtime. You will see this runtime in search algorithms.
-- Θ(N). This is linear runtime. You will often see this when you have to iterate through an entire dataset.
-- Θ(N\*logN). You will see this runtime in sorting algorithms.
-- Θ(N2). This is an example of a polynomial runtime. When N is raised to the 2nd power, it’s known as a quadratic runtime. You will see this runtime when you have to search through a two-dimensional dataset (like a matrix) or nested loops.
-- Θ(2N). This is exponential runtime. You will often see this runtime in recursive algorithms.
-- Θ(N!). This is factorial runtime. You will often see this runtime when you have to generate all of the different permutations of something. For instance, a program that generates all the different ways to order the letters “abcd” would run in this runtime.
+- `O(1)` - Constant Time - The runtime of the algorithm does not change based on the input size. You see this in algorithms that access a single element in an array.
+- `O(log n)` - Logarithmic Time - The runtime of the algorithm grows logarithmically as the input size grows. You see this in algorithms that divide the input in half each time.
+- `O(n)` - Linear Time - The runtime of the algorithm grows linearly as the input size grows. You see this in algorithms that iterate through the input.
+- `O(n log n)` - Linearithmic Time - The runtime of the algorithm grows in n log n time. You see this in algorithms that divide the input in half and iterate through each half.
+- `O(n^2)` - Quadratic Time - The runtime of the algorithm grows quadratically as the input size grows. You see this in algorithms that have nested iterations.
+- `O(2^n)` - Exponential Time - The runtime of the algorithm grows exponentially as the input size grows. You see this in algorithms that have recursive algorithms that make multiple calls to itself.
+- `O(n!)` - Factorial Time - The runtime of the algorithm grows factorially as the input size grows. You see this in algorithms when you have to generate multiple permutations of a set.
 
 ![Big-O Complexity Chart](Big_O.png)
 
@@ -55,5 +55,7 @@ Like with time complexity, space complexity denotes space growth in relation to 
 In summary, asymptotic notations are essential for analyzing the performance of algorithms, allowing developers to select the most efficient algorithms for their needs.
 
 ###### References
+
+Front End Engineer Career Path / Interview Prep / Algorithms / Asymptotic Notation
 
 - [Codecademy](https://www.codecademy.com)
